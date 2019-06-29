@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:20px;
+}
+
+input {
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px;
+    background: #7C5CBF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: background .3s ease;
+}
+
+#main{
+    width:100%;
+    display: flex;
+}
+
+#left{
+    width:20%;
+    height:100vh;
+    flex: 0 1 auto;
+    border-right:1px solid cyan;
+    overflow-y: scroll;
+}
+#right{
+    width:70%;
+    max-height:100vh;
+    border-left:1px solid cyan;
+    flex:1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#messages{
+    flex-grow : 1;
+    overflow-y: scroll;   
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+}
+
+
+#message-box{
+    background-color: darkgray;
+    flex: 0 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    /* border:2px solid red; */
+}
+
+#chat{
+    width:80%;
+    margin:5px;
+    flex:1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+#location{
+    width:20%;
+    margin:5px;
+    flex:1 1 auto;
+}
+
+#chat input{
+    margin:2px;
+    width:75%;
+    flex:1 1 auto;
+}
+
+#chat button{
+    margin:2px;
+    width:25%;
+    flex:1 1 auto;
+}
+
+#message{
+    margin-left:20px;
+    width:30%;
+    background-color: darkgrey;
+    margin-top:5px;
+    margin-bottom:10px;
+    padding:10px;
+}
+
+p #username{
+    font-size:5px;
+    color: orangered;
+}
+
+p #usermessgae{
+    font-size:10px;
+    color:black;
+}
+
+#welcome{
+    margin-left:20px;
+    width:30%;
+    height:50px;
+    background-color: darkgrey;
+    margin: 0 auto;
+    margin-top:5px;
+    margin-bottom:10px;
+    padding:10px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+p #wel-msg{
+    font-size: 10px;
+    color: forestgreen;
+    text-align: center;
+}
+
+#snd-message{
+    margin-left:70%;
+    width:30%;
+    background-color: darkgrey;
+    margin-top:5px;
+    margin-bottom:10px;
+    padding:10px;
+    align-self: flex-end;
+}
+
+.room{
+    border-top:2px solid #7C5CBF;
+    border-bottom:2px solid #7C5CBF;
+    background-color: darkgray;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#room-name{
+    width: 100%;
+    height:50px;
+    text-align: center;
+    border: 2px solid #7C5CBF;
+}
