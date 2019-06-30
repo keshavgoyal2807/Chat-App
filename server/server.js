@@ -64,6 +64,8 @@ io.on('connection',(socket)=>{
             room:user.room,
             users
         });
+        rooms = getrooms();
+        socket.emit('rooms',rooms);
         }
     })
 })

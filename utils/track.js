@@ -57,7 +57,24 @@ const removeUser = (id)=>{
         return user.id===id
     })
     if(index!==-1)
-    return users.splice(index,1)[0];
+    {
+        const room1 = users[index].room;
+        // console.log(room1);
+        const index1 = rooms.findIndex((room)=>{
+            return room.room===room1
+        })
+        // console.log(index1);
+        if(index1!==-1)
+        {
+            rooms[index1].users=rooms[index1].users-1;
+            if(rooms[index1].users===0)
+            {
+                rooms.splice(index1,1);
+            }
+            // console.log(rooms);
+        }
+        return users.splice(index,1)[0];
+    }
 }
 
 //get user

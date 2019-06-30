@@ -46,12 +46,7 @@ socket.emit('details',details,function(user){
 
 else
 {
-    socket.emit('getroomslist',{});
-    socket.on('rooms',(rooms)=>{
-        var template = document.getElementById('rooms_template').innerHTML
-        var render = Mustache.render(template,{rooms});
-        document.getElementById('left1').innerHTML = render;
-    })
+    
 }
 
 // WELCOME MESSAGE
